@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contatti — Sara Madaschi Studio</title>
+  <meta name="description" content="Contatta lo studio Sara Madaschi per richiedere una consulenza, presentare un progetto o semplicemente fare una chiacchierata." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="chip"></span>
+      <span>Sara Madaschi</span>
+    </a>
+    <nav class="nav-links">
+      <a href="progetti.html">Progetti</a>
+      <a href="chi-sono.html">Studio</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="contatti.html" class="active">Contatti</a>
+    </nav>
+    <span class="nav-lang">IT / EN</span>
+    <a href="#form" class="nav-cta">Scrivici</a>
+    <button class="hamburger" id="nav-toggle" aria-label="Apri menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mnav" id="mnav">
+  <button class="mnav-close" id="mnav-close">✕</button>
+  <a href="index.html">Home</a>
+  <a href="progetti.html">Progetti</a>
+  <a href="chi-sono.html">Studio</a>
+  <a href="servizi.html">Servizi</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="#form" class="mnav-cta-link">Scrivici →</a>
+</nav>
+
+<main>
+
+  <!-- ── PAGE HEADER ── -->
+  <div class="page-header">
+    <span class="eyebrow">Iniziamo a parlare</span>
+    <h1>Il prossimo progetto<br/>può iniziare <em>oggi</em>.</h1>
+    <p>Raccontaci del tuo spazio, del tuo progetto o anche solo di un'idea vaga. Rispondiamo entro 48 ore.</p>
+  </div>
+
+  <!-- ── CONTACT LAYOUT ── -->
+  <div class="section" id="form">
+    <div class="contact-layout">
+
+      <!-- FORM -->
+      <div>
+        <span class="eyebrow" style="margin-bottom: 32px;">Scrivi allo studio</span>
+        <form id="contact-form" novalidate>
+          <div class="g-2" style="gap: 0 40px;">
+            <div class="form-field">
+              <label for="nome">Nome e cognome</label>
+              <input type="text" id="nome" name="nome" placeholder="Giulia Rossi" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="giulia@email.com" required />
+            </div>
+          </div>
+          <div class="g-2" style="gap: 0 40px;">
+            <div class="form-field">
+              <label for="telefono">Telefono (opzionale)</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+39 000 000 0000" />
+            </div>
+            <div class="form-field">
+              <label for="tipo">Tipo di progetto</label>
+              <select id="tipo" name="tipo">
+                <option value="">Seleziona...</option>
+                <option>Ristrutturazione residenziale</option>
+                <option>Interior design completo</option>
+                <option>Progettazione architettonica</option>
+                <option>Interior design commerciale</option>
+                <option>Consulenza di design</option>
+                <option>Home staging</option>
+                <option>Altro</option>
+              </select>
+            </div>
+          </div>
+          <div class="g-2" style="gap: 0 40px;">
+            <div class="form-field">
+              <label for="luogo">Città / Luogo del progetto</label>
+              <input type="text" id="luogo" name="luogo" placeholder="Bergamo, Milano..." />
+            </div>
+            <div class="form-field">
+              <label for="budget">Budget indicativo</label>
+              <select id="budget" name="budget">
+                <option value="">Seleziona...</option>
+                <option>Fino a € 20.000</option>
+                <option>€ 20.000 – 50.000</option>
+                <option>€ 50.000 – 100.000</option>
+                <option>€ 100.000 – 200.000</option>
+                <option>Oltre € 200.000</option>
+                <option>Da definire</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="messaggio">Raccontaci il progetto</label>
+            <textarea id="messaggio" name="messaggio" placeholder="Descrivici lo spazio, cosa vorresti cambiare, quando vorresti iniziare. Più dettagli ci dai, meglio possiamo risponderti."></textarea>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; margin-top: 8px;">
+            <label class="form-check">
+              <input type="checkbox" required />
+              <span>Ho letto e accetto la <a href="#" style="color: var(--terra-500); text-decoration: underline;">privacy policy</a></span>
+            </label>
+            <button type="submit" class="btn btn-primary btn-arr">Invia la richiesta</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info">
+        <h2>Parliamo <em>di persona</em>, se preferisci.</h2>
+
+        <div class="c-detail">
+          <svg viewBox="0 0 24 24">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="c-detail-body">
+            <div class="lbl">Studio</div>
+            <p>Via Torquato Tasso 12<br/>24121 Bergamo BG</p>
+          </div>
+        </div>
+
+        <div class="c-detail">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 6h18v12H3zM3 6l9 7 9-7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="c-detail-body">
+            <div class="lbl">Email</div>
+            <p><a href="mailto:hello@saramadaschi.it" style="color: var(--terra-500);">hello@saramadaschi.it</a></p>
+          </div>
+        </div>
+
+        <div class="c-detail">
+          <svg viewBox="0 0 24 24">
+            <path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3.09a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.8.7a2 2 0 0 1 1.72 2.04z" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="c-detail-body">
+            <div class="lbl">Telefono</div>
+            <p><a href="tel:+390350000000" style="color: var(--terra-500);">+39 035 000 000</a></p>
+          </div>
+        </div>
+
+        <div class="c-detail">
+          <svg viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.5 6.5h.01" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="c-detail-body">
+            <div class="lbl">Instagram</div>
+            <p><a href="#" style="color: var(--terra-500);">@saramadaschi.studio</a></p>
+          </div>
+        </div>
+
+        <!-- Orari -->
+        <div style="margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--cream-200);">
+          <span class="eyebrow" style="margin-bottom: 16px;">Orari di ricevimento</span>
+          <div style="display: grid; grid-template-columns: auto 1fr; gap: 6px 24px; font-size: 14px; color: var(--ink-700);">
+            <span style="font-family: var(--mono); font-size: 11px; color: var(--ink-500); letter-spacing: 0.06em;">LUN – VEN</span>
+            <span>09:00 – 18:00</span>
+            <span style="font-family: var(--mono); font-size: 11px; color: var(--ink-500); letter-spacing: 0.06em;">SAB</span>
+            <span>Su appuntamento</span>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="map-ph">mappa · Bergamo</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── FAQ BREVE ── -->
+  <div class="bg-cream border-top">
+    <div class="section">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Prima di scrivere</span>
+          <h2 class="section-title">Domande <em>rapide</em>.</h2>
+        </div>
+        <a href="servizi.html" class="btn btn-outline btn-arr">Tutte le FAQ</a>
+      </div>
+      <div class="faq">
+        <div class="faq-item open">
+          <div class="faq-q">Fate sopralluogi gratuiti?</div>
+          <div class="faq-a">Il primo incontro conoscitivo è sempre in studio o in videocall e dura circa 45 minuti. Il sopralluogo sullo spazio è parte della prima consulenza, che è a pagamento. Questo ci permette di dedicarci davvero al vostro progetto fin dall'inizio.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Entro quanto rispondete alle richieste?</div>
+          <div class="faq-a">Rispondiamo entro 48 ore lavorative a tutte le richieste ricevute via email o modulo. Se la vostra richiesta è urgente, scrivete direttamente al numero di telefono.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Si può richiedere una consulenza anche per un progetto piccolo?</div>
+          <div class="faq-a">Assolutamente sì. Lavoriamo su progetti di tutte le dimensioni, dagli appartamenti compatti ai grandi cantieri. La cura che mettiamo non dipende dai metri quadri.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CTA BOTTOM ── -->
+  <div class="cta-banner">
+    <div class="cta-banner-inner">
+      <h2>Non sai ancora da dove partire? <em>Inizia comunque.</em></h2>
+      <div class="cta-actions">
+        <a href="#form" class="btn btn-outline-light btn-arr">Scrivi un messaggio</a>
+        <a href="progetti.html" class="btn btn-sage">Guarda i progetti</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <span class="chip"></span>
+        <span>Sara Madaschi</span>
+      </div>
+      <p class="footer-tagline">Architettura d'interni e interior design tra Bergamo e Milano. Progetti residenziali su misura, dall'idea alla consegna.</p>
+      <a href="#form" class="btn btn-outline-light">Scrivici →</a>
+    </div>
+    <div>
+      <div class="footer-col-title">Studio</div>
+      <ul class="footer-links">
+        <li><a href="chi-sono.html">Chi sono</a></li>
+        <li><a href="servizi.html">Servizi</a></li>
+        <li><a href="chi-sono.html#press">Press</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Progetti</div>
+      <ul class="footer-links">
+        <li><a href="progetti.html">Residenziale</a></li>
+        <li><a href="progetti.html">Commerciale</a></li>
+        <li><a href="progetti.html">Workspace</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Studio Madaschi</div>
+      <ul>
+        <li class="footer-info-item">Via Torquato Tasso 12</li>
+        <li class="footer-info-item">24121 Bergamo BG</li>
+        <li class="footer-info-item" style="margin-top: 8px;">hello@saramadaschi.it</li>
+        <li class="footer-info-item">+39 035 000 000</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Sara Madaschi Studio · P.IVA 00000000000</span>
+    <span>Privacy Policy · Cookie Policy</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
